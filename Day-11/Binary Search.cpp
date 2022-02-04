@@ -9,7 +9,7 @@ typedef tree<int, null_type, less<int>, rb_tree_tag,tree_order_statistics_node_u
 bool binarysearch(vector<int> &v,int tar){
     int n=v.size();
     int s=0,e=n-1;
-    while(s<e){
+    while(s<=e){
         int mid=s+(e-s)/2;
         if(v[mid]==tar){
             return 1;
